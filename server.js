@@ -7,9 +7,7 @@ app.use(express.json());
 
 
 app.post('/scrap', async (req, res) => {
-  console.log(req.body)
   const data = await runPuppeteer(req.body)
-
   return res.json(data);
 });
 
