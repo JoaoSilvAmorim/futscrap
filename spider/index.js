@@ -15,7 +15,6 @@ const runPuppeteer = async (link_data) =>{
     const page = await browser.newPage();
 
     let dataPrice = await spider(page, link_data);
-    console.log(dasssd
     return dataPrice
 }
 
